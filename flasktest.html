@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inventors</title>
+</head>
+<body>
+<h1> random stuff about inventors</h1>
+<h3> for my first flask attempt</h3>
+<p> hope this works!!</p>
+
+<ol>
+    {% for inventor in inventors %}
+        <li> {{ inventor.inventor }}</li>
+        <p>{{ inventor.invention }}</p>
+        <p> {{ inventor.invented }}</p>
+
+    {% endfor %}
+</ol>
+{% for genre in genres %}
+    <P>{{ genre }}</P>
+{% endfor %}
+
+</body>
+</html>
